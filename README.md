@@ -1,1 +1,0 @@
-# ishokudougen.github.io

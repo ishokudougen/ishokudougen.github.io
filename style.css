@@ -18,7 +18,7 @@ header {
     text-orientation: upright;
     font-family: serif;
     font-size: 18px;
-    color: #3C3C3C;
+    color: #313131;
 }
 .nav a:hover {
     color: #aaa;
@@ -35,19 +35,11 @@ header {
 .mv599 {
     display: none;
 }
-.txt {
-    writing-mode: vertical-rl;
-    margin: 120px auto;
-    letter-spacing: inherit;
-    font-size: 24px;
-    font-family: serif;
-    line-height: 3.0;
-    color: #3C3C3C;
+.txt750 {
+    display: none;
 }
-.txt-title {
-    font-size: 39px;
-    font-family: serif;
-    color: #3C3C3C;
+.txt img {
+    max-width: 100%;
 }
 .about h2 {
     padding: 18px 0;
@@ -55,7 +47,7 @@ header {
     line-height: 1;
     text-align: center;
     font-family: serif;
-    color: #3C3C3C;
+    color: #313131;
 }
 .about .inner {
     width: 96%;
@@ -66,16 +58,40 @@ header {
     margin-top: 150px;
     font-size: 18px;
     font-family: serif; 
-    color: #3C3C3C;
+    color: #313131;
 }
 .about .inner span {
     font-size: 27px;
-    color: #3C3C3C;
+    color: #313131;
 }
 .items01 {
     display: flex;
     justify-content: space-between;
 }
+/* .vew-more:before {
+    background: url(../img/common/vew-more.png) no-repeat;
+    background-position: top right;
+    left: 0;
+} */
+/* .vew-more:after {
+    background: url(../img/common/vew-more-red.png) no-repeat;
+    background-position: top right;
+    left: -100%;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.vew-more:before, .vew-more:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    transition: ease 0.3s;
+} */
 .items02 {
     display: flex;
     justify-content: space-between;
@@ -95,7 +111,7 @@ header {
     text-align: center;
     font-size: 34px;
     font-family: serif;
-    color: #3C3C3C;
+    color: #313131;
     margin-top: 60px;
     margin-bottom: 60px;
     padding-top: 60px;
@@ -117,12 +133,12 @@ header {
     font-size: 34px;
     text-align: center;
     font-family: serif;
-    color: #3C3C3C;
+    color: #313131;
     margin-top: 60px;
     margin-bottom: 90px;
 }
 footer {
-    background: #3c3c3c;
+    background: #313131;
     height: 300px;
 }
 .footer-innner {
@@ -167,7 +183,7 @@ footer img {
         display: block;
         width: 30px;
         height: 1px;
-        background: #3C3C3C;
+        background: #313131;
         margin: 0 auto;
         margin-top: 5px;
     }
@@ -209,9 +225,6 @@ footer img {
     }
     .mv599 {
         display: none;
-    }
-    .txt {
-        height: 33%;
     }
     .about h2 {
         margin-top: 100px;
@@ -281,13 +294,11 @@ footer img {
         display: block;
         margin-top: 50px;
     }
-    .txt-title {
-        font-size: 18px;
-    }
     .txt {
-        font-size: 12px;
-        height: 150px;
-        line-height: 2.1;
+        display: none;
+    }
+    .txt750 {
+        display: block;
     }
     .about .inner span {
         font-size: 20px;

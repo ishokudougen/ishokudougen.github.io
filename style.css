@@ -41,6 +41,15 @@ header {
 .txt img {
     max-width: 100%;
 }
+.fadein {
+    opacity: 0;
+    transform: translate(0,60px);
+    transition: all 1.5s;
+}
+.fadein.scrollin {
+    opacity: 1;
+    transform: translate(0,0);
+}
 .about h2 {
     padding: 18px 0;
     font-size: 34px;
@@ -68,30 +77,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-/* .vew-more:before {
-    background: url(../img/common/vew-more.png) no-repeat;
-    background-position: top right;
-    left: 0;
-} */
-/* .vew-more:after {
-    background: url(../img/common/vew-more-red.png) no-repeat;
-    background-position: top right;
-    left: -100%;
-    -webkit-transition-delay: 0.3s;
-    -o-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-}
-
-.vew-more:before, .vew-more:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
-    -webkit-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
-    transition: ease 0.3s;
-} */
 .items02 {
     display: flex;
     justify-content: space-between;
@@ -163,11 +148,14 @@ footer img {
     display: flex;
     margin: 0 auto;
     width: 300px;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 24px;
 }
 .fab {
     color: #fff;
+}
+.fab:hover {
+    color: #aaa;
 }
 @media screen and (max-width: 1024px){
     .gnavbtn {
@@ -184,8 +172,7 @@ footer img {
         width: 30px;
         height: 1px;
         background: #313131;
-        margin: 0 auto;
-        margin-top: 5px;
+        margin: 5px auto 9px;
     }
     .nav {
         display: none;
@@ -248,7 +235,6 @@ footer img {
     .items01 p {
         margin: 0 auto;
         width: 81%;
-        
     }
     .items02 img {
         margin: 0 auto;
@@ -265,8 +251,7 @@ footer img {
     .items03 p {
         margin: 0 auto;
         width: 81%;
-    }
-    
+    }    
 }
 @media screen and (max-width: 599px) {
     header img {
@@ -276,13 +261,14 @@ footer img {
     .gnavbtn {
         z-index: 1;
         position: fixed;
-        top: 21px;
+        top: 27px;
         right: 20px;
         width: 40px;
         height: 40px;
     }
     .gnavbtn span {
         width: 24px;
+        margin-bottom: 6px;
     }
     .gnav li {
         font-size: 24px;
@@ -308,6 +294,5 @@ footer img {
     }
     footer img {
         width: 100px;
-        
     }
 }

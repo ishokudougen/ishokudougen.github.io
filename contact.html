@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <title>医食同源</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e45cc168c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="header-inner">
+            <p><img src="img/logo.png" alt="医食同源"></p>
+            <div id="js-gnavbtn" class="gnavbtn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="#">商品一覧</a></li>
+                    <li><a href="#">がごめ昆布とは</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>    
+            </div>
+            <div class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="#">商品一覧</a></li>
+                    <li><a href="#">がごめ昆布とは</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>    
+            </div>
+        </div>
+    </header>
+    <div class="contact">
+        <h2>お問い合わせ</h2>
+        <form class="form-style" action="" method="">
+            <div class="form-list">
+                <p>お名前</p>
+                <input type="text" name="name">
+            </div>
+            <div class="form-list">
+                <p>メールアドレス</p>
+                <input type="email" name="mail">
+            </div>
+            <div class="form-list">
+                <p>お問い合わせ項目</p>
+                <select name="lists">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-list">
+                <p>お問い合わせ内容</p>
+                <textarea name="comment" cols="30" rows="10"></textarea>
+            </div>
+            <p><input type="submit" value="送信"></p>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-innner">
+            <p>
+                <img src="./img/footerlogo.png" alt="">
+            </p>
+            <div class="fa">
+                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <p class="copyright">
+                <small>© Ishokudougen Co,.Ltd. All right reserved.</small>
+            </p>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    $(function() {
+      $("#js-gnavbtn").click(function() {
+      $('body').toggleClass("show");
+      });
+    });
+    </script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 150) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

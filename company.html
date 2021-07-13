@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <title>医食同源</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e45cc168c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="header-inner">
+            <p><img src="img/logo.png" alt="医食同源"></p>
+            <div id="js-gnavbtn" class="gnavbtn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="#">商品一覧</a></li>
+                    <li><a href="#">がごめ昆布とは</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>    
+            </div>
+            <div class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="#">商品一覧</a></li>
+                    <li><a href="#">がごめ昆布とは</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>    
+            </div>
+        </div>
+    </header>
+    <div class="company">
+        <h2>会社概要</h2>
+        <div class="inner">
+            <dl>
+            <dt>社名</dt>    
+            <dd>株式会社　医食同源</dd>       
+            </dl>  
+            <dl>
+            <dt>設立年月日</dt>    
+            <dd>平成7年11月15日</dd>       
+            </dl> 
+            <dl>
+            <dt>役員</dt>    
+            <dd>
+            ・代表取締役　中山 一郎<br>
+            ・取締役　中山 浩一<br>
+            ・監査役　中山 由美子
+            </dd>       
+            </dl> 
+            <dl>
+            <dt>本社所在地</dt>    
+            <dd>
+            北海道函館市万代町20番10号
+            </dd>       
+            </dl>
+            <dl>
+            <dt>資本金</dt>    
+            <dd>
+            500万円
+            </dd>       
+            </dl>
+            <dl>
+            <dt>事業内容</dt>    
+            <dd>
+            ・食料品、清涼飲料、嗜好飲料の販売<br>
+            ・水産物、及びこれらの加工品の販売<br>
+            ・食品添加物の製造販売<br>
+            ・業務用洗剤の製造及び販売<br>
+            </dd>       
+            </dl>
+            <dl>
+            <dt>店舗案内</dt>    
+            <dd>
+            <span class="name">医食同源 JR函館駅店(2020年1月28日 閉店)</span><br>
+            函館市若松町12-13　JR函館駅1F<br>
+            TEL 0138-40-3938<!--<br><br>
+            <span class="name">医食同源　新函館北斗店(H29.3.17オープン)</span><br>
+            北斗市市渡1丁目1-7　北斗市観光交流センター別館ほっくる1F<br>
+            TEL 0138-83-2380-->
+            </dd>       
+            </dl>
+            </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-innner">
+            <p>
+                <img src="./img/footerlogo.png" alt="">
+            </p>
+            <div class="fa">
+                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <p class="copyright">
+                <small>© Ishokudougen Co,.Ltd. All right reserved.</small>
+            </p>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    $(function() {
+      $("#js-gnavbtn").click(function() {
+      $('body').toggleClass("show");
+      });
+    });
+    </script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 150) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -26,6 +26,7 @@ header {
 .gnav {
     display: none;
 }
+
 .mv {
     margin-top: 170px;
 }
@@ -157,6 +158,57 @@ footer img {
 .fab:hover {
     color: #aaa;
 }
+.contact {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: serif;
+    color: #313131;
+}
+.contact h2 {
+    margin-top: 180px;
+    font-size: 34px;
+    text-align: center;
+    font-family: serif;
+}
+.form-style {
+    margin-top: 60px;
+}
+.form-list {
+    margin-bottom: 30px;
+}
+.form-list p {
+    margin-bottom: 5px;
+}
+input {
+    font-family: serif;
+    margin-bottom: 30px;
+}
+.form-list textarea {
+    border: 1px solid;
+}
+.company h2 {
+    margin-top: 180px;
+    margin-bottom: 90px;
+    font-size: 34px;
+    text-align: center;
+    font-family: serif;
+}
+
+.company .inner dl {
+    max-width: 760px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    line-height: 2;
+    font-family: serif;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* .company .inner dd {
+    margin-left: 180px;
+} */
+
 @media screen and (max-width: 1024px){
     .gnavbtn {
         z-index: 1;
@@ -214,7 +266,7 @@ footer img {
         display: none;
     }
     .about h2 {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .about .inner p {
         margin-top: 50px;
@@ -286,11 +338,30 @@ footer img {
     .txt750 {
         display: block;
     }
+    .about h2 {
+        font-size: 24px;
+    }
+    .news h3 {
+        font-size: 24px;
+        margin-bottom: 120px;
+    }
+    .access h3 {
+        font-size: 24px;
+    }
     .about .inner span {
         font-size: 20px;
     }
     .about .inner p {
         font-size: 15px;
+    }
+    
+    .contact h2 {
+        font-size: 24px;
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+    .form-style {
+        margin:0 10px;
     }
     footer img {
         width: 100px;

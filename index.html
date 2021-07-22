@@ -40,9 +40,15 @@
             </div>
         </div>
     </header>
-    <div class="mv">
-        <img src="main.jpg" width="100%" alt="pc">
+    <div class="slide-item">
+        <div class="mv">
+            <img src="main.jpg" width="100%" alt="pc">
+        </div>
+        <div class="mv">
+            <img src="main02.jpg" width="100%" alt="pc">
+        </div>
     </div>
+    
     <div class="mv1024">
         <img src="main768.jpg" width="100%" alt="ipad">
     </div>
@@ -142,6 +148,18 @@
                 });
             });
         });
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+        $('.slide-item').slick({
+          accessibility: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 600
+        }); 
+      });
     </script>
 </body>
 </html>

@@ -341,6 +341,7 @@ input {
         display: block;
     }
     .about h2 {
+        margin-top: 0;
         font-size: 24px;
     }
     .news h3 {

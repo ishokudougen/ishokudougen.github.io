@@ -205,6 +205,35 @@ input {
     display: flex;
     justify-content: space-between;
 }
+.product {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product h2 {
+    margin-top: 180px;
+    margin-bottom: 90px;
+    font-size: 34px;
+    text-align: center;
+    font-family: serif;
+}
+.product h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+.product-list {
+    /* max-width: 300px; */
+    font-size: 12px;
+    font-family: serif;
+}
+.product-list-title {
+    text-align: center;
+}
+.product-wrap {
+    display: flex;
+    justify-content: space-between;
+}
 /* .company .inner dd {
     margin-left: 180px;
 } */
@@ -372,6 +401,13 @@ input {
     }
     .company .inner dl {
         font-size: 12px;
+    }
+    .product-wrap {
+        display: block;
+        max-width: 100%;
+    }
+    .product-wrap img {
+        width: 100%;
     }
     .form-style {
         margin:0 10px;

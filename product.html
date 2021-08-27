@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <title>医食同源</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e45cc168c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="header-inner">
+            <p><img src="img/logo.png" alt="医食同源"></p>
+            <div id="js-gnavbtn" class="gnavbtn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="product.html">商品一覧</a></li>
+                    <li><a href="#">がごめ昆布</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>    
+            </div>
+            <div class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="product.html">商品一覧</a></li>
+                    <li><a href="#">がごめ昆布</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>    
+            </div>
+        </div>
+    </header>
+    <section class="product">
+        <h2>商品一覧</h2>
+            <div class="product-wrap">
+                <section class="product-list">
+                    <p><img src="./img/items1.jpg" alt=""></p>
+                    <h3 class="product-list-title">松前漬手造りセット ミニ樽</h3>
+                    <!-- <p>函館産真昆布とがごめ昆布、北海道産スルメに保存料・化学調味料無添加の美味しいタレを添付しました。生姜や人参など野菜の千切り、ゆず皮や鷹の爪などの香の物、数の子やホタテなどの魚介と、お好みで様々な素材と混ぜ合わせるとオリジナルの松前漬が作れます。</p> -->
+                </section>
+                <section class="product-list">
+                    <p><img src="./img/items2.jpg" alt=""></p>
+                    <h3 class="product-list-title">松前漬野菜入り手造りセット</h3>
+                    <!-- <p>函館産真昆布とがごめ昆布、北海道産スルメに保存料・化学調味料無添加の美味しいタレを添付しました。生姜や人参など野菜の千切り、ゆず皮や鷹の爪などの香の物、数の子やホタテなどの魚介と、お好みで様々な素材と混ぜ合わせるとオリジナルの松前漬が作れます。</p> -->
+                </section>
+                <section class="product-list">
+                    <p><img src="./img/items3.jpg" alt=""></p>
+                    <h3 class="product-list-title">がごめ昆布おかず手造りセット</h3>
+                    <!-- <p>函館産真昆布とがごめ昆布、北海道産スルメに保存料・化学調味料無添加の美味しいタレを添付しました。生姜や人参など野菜の千切り、ゆず皮や鷹の爪などの香の物、数の子やホタテなどの魚介と、お好みで様々な素材と混ぜ合わせるとオリジナルの松前漬が作れます。</p> -->
+                </section>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-innner">
+            <p>
+                <img src="./img/footerlogo.png" alt="">
+            </p>
+            <div class="fa">
+                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <p class="copyright">
+                <small>© Ishokudougen Co,.Ltd. All right reserved.</small>
+            </p>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    $(function() {
+      $("#js-gnavbtn").click(function() {
+      $('body').toggleClass("show");
+      });
+    });
+    </script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 150) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

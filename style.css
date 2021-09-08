@@ -409,7 +409,6 @@ input {
         font-size: 24px;
     }
     .product-wrap {
-        display: block;
         max-width: 100%;
     }
     .product-wrap img {
